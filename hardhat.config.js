@@ -3,7 +3,7 @@ const { EtherSymbol } = require("ethers");
 require("@nomicfoundation/hardhat-toolbox");
 require("dotenv").config();
 require("@nomicfoundation/hardhat-verify");
-
+require("./tasks/block-number");
 /** @type import('hardhat/config').HardhatUserConfig */
 
 const SEPOLIA_RPC_URL = process.env.SEPOLIA_RPC_URL;
