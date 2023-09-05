@@ -4,6 +4,7 @@ require("@nomicfoundation/hardhat-toolbox")
 require("dotenv").config()
 require("@nomicfoundation/hardhat-verify")
 require("./tasks/block-number")
+require("hardhat-gas-reporter")
 /** @type import('hardhat/config').HardhatUserConfig */
 
 const SEPOLIA_RPC_URL = process.env.SEPOLIA_RPC_URL
@@ -26,5 +27,11 @@ module.exports = {
     solidity: "0.8.7",
     etherscan: {
         apiKey: ETHERSCAN_API_KEY,
+    },
+    gasReporter: {
+        enabled: true,
+        outputFile: "gas-report.txt",
+        noColors: true,
+        //currency: "usd"
     },
 }
