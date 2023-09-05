@@ -60,11 +60,3 @@ describe("SimpleStorage",function (){
   })
 })
 ```
-_these are nested describes_
-<br>
-Using `chai`<br>
-we can use chai to access `assert,expext` to check values <br>
-to run a perticular test we can use `yarn hardhat test --grep ______` and in __ a ;key word from the phrase we have written like store 
-<br> so the comand will be `yarn hardhat test --grep store` to run tests that contain store in thee messege<br>
-
-another way to run specific task is to add only after it Eg:- `it.only(){}`
