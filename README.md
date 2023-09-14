@@ -41,7 +41,7 @@ await simpleStorage.retrieve();
 # runing tests
 
 this is first line of defence!<br>
-We can reffer to [website](rekt.news) for understanding what hacks wee done and what lacked to learn for ourselfs and amke good tests.<br>
+We can reffer to [website](rekt.news) for understanding what hacks were done and what we lacked to learn for ourselfs and make good tests.<br>
 
 ```
 describe("SimpleStorage",function (){

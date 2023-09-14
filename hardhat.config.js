@@ -10,6 +10,7 @@ require("hardhat-gas-reporter")
 const SEPOLIA_RPC_URL = process.env.SEPOLIA_RPC_URL
 const PRIVATE_KEY = process.env.PRIVATE_KEY
 const ETHERSCAN_API_KEY = process.env.ETHERSCAN_API_KEY
+const COINMARKET_API_KEY = process.env.COINMARKET_API_KEY
 
 module.exports = {
     defaultNetwork: "hardhat",
@@ -32,6 +33,7 @@ module.exports = {
         enabled: true,
         outputFile: "gas-report.txt",
         noColors: true,
-        //currency: "usd"
+        currency: "usd",
+        coinmarketcap: COINMARKET_API_KEY,
     },
 }
