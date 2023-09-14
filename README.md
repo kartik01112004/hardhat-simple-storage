@@ -22,7 +22,7 @@ yarn hardhat verify --network mainnet DEPLOYED_CONTRACT_ADDRESS "Constructor arg
 # The hardhat console
 
 
-run:- anyof these comands or any other network you like!<br>
+run:- any of these comands or any other network you like!<br>
 `yarn hardhat console --network localhost`<br>
 `yarn hardhat console --network sepolia`<br>
 `yarn hardhat console --network hardhat`<br>
@@ -40,7 +40,7 @@ await simpleStorage.retrieve();
 
 # runing tests
 
-tis is first line of defence!<br>
+this is first line of defence!<br>
 We can reffer to [website](rekt.news) for understanding what hacks wee done and what lacked to learn for ourselfs and amke good tests.<br>
 
 ```
@@ -64,7 +64,7 @@ _these are nested describes_
 <br>
 ## Using `chai`<br>
 we can use chai to access `assert,expext` to check values <br>
-to run a perticular test we can use `yarn hardhat test --grep ______` and in __ a ;key word from the phrase we have written like store 
+to run a perticular test we can use `yarn hardhat test --grep ______` and in __ fill a keyword from the phrase we have written like _store_ 
 <br> so the comand will be `yarn hardhat test --grep store` to run tests that contain store in thee messege<br>
 
 another way to run specific task is to add only after it Eg:- `it.only(){}`
