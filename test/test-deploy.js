@@ -22,7 +22,13 @@ describe("SimpleStorage", function () {
         await transactionResponce.wait(1)
 
         const currentValue = await simpleStorage.retrieve()
-        //assert.equal(currentValue.toString(), expectedValue)
-        expect(currentValue.toString()).to.equal(expectedValue)
+        assert.equal(currentValue.toString(), expectedValue)
+        //expect(currentValue.toString()).to.equal(expectedValue)
+    })
+    it("should update when we add a person", async function () {
+        const person = "kartik"
+        const faveN = 10
+        const transactionResponce = await simpleStorage.addPerson(person, faveN)
+        await transactionResponce.wait(5)
     })
 })
