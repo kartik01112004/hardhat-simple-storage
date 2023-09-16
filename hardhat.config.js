@@ -5,10 +5,11 @@ require("dotenv").config()
 require("@nomicfoundation/hardhat-verify")
 require("./tasks/block-number")
 require("hardhat-gas-reporter")
-require("solidity-coverage")
+require("solidity-coverage") //to get  knowledge of what solidity code we have performed tests on
 /** @type import('hardhat/config').HardhatUserConfig */
 
-const SEPOLIA_RPC_URL = process.env.SEPOLIA_RPC_URL || "" //
+const SEPOLIA_RPC_URL = process.env.SEPOLIA_RPC_URL || "" // if SEPOLIA_RPC_URL doesnot exist then
+// the blank will be chosen so no error occures
 const PRIVATE_KEY = process.env.PRIVATE_KEY
 const ETHERSCAN_API_KEY = process.env.ETHERSCAN_API_KEY
 const COINMARKETCAP_API_KEY = process.env.COINMARKETCAP_API_KEY
@@ -31,11 +32,13 @@ module.exports = {
         apiKey: ETHERSCAN_API_KEY,
     },
     gasReporter: {
+        //to see how much gas any function uses
+        //so we can optimize it to be less costly and more effective
         enabled: false,
         currency: "USD",
         outputFile: "gas-report.txt",
         noColors: true,
         coinmarketcap: COINMARKETCAP_API_KEY,
-        token: "MATIC",
+        token: "MATIC", // to change currency output to differnt cryto currency blockchains
     },
 }

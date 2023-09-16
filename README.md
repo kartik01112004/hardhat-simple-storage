@@ -1,3 +1,11 @@
+# Basic things
+hardhat.config is the heart, the brain like hardhat looks for this file first<br>
+scripts are for your local environment and tasks are for plugins ~patric <br>
+it doesnt matter what you choe both will work just it will be arranged better thsi way!
+<br>tests are very important and you need to write good tests1<br>to know which line of your code is not tested use `solidity-coverage`
+<br> multiple network will need differnt env variables dont forget to use `.env` file for safer API keys atlest to protect them from being getting uploaded on open source platforms.
+
+
 # Sample Hardhat Project
 
 yarn hardhat run scripts/deploy.js --network hardhat<br>
