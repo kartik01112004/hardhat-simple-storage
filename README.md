@@ -42,9 +42,9 @@ const SimpleStorageFactory = await ethers.getContractFactory("SimpleStorage");
 const simpleStorage = await SimpleStorageFactory.deploy();
 ```
 <h3>and run transactions ..like</h3>
-```
+`
 await simpleStorage.retrieve();
-```<br>
+`<br>
 
 # runing tests
 
