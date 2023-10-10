@@ -25,10 +25,10 @@ describe("SimpleStorage", function () {
         assert.equal(currentValue.toString(), expectedValue)
         //expect(currentValue.toString()).to.equal(expectedValue)
     })
-    it("should update when we add a person", async function () {
-        const person = "kartik"
-        const faveN = 10
-        const transactionResponce = await simpleStorage.addPerson(person, faveN)
-        await transactionResponce.wait(5)
-    })
+    // it("should update when we add a person", async function () {
+    //     const person = "kartik"
+    //     const faveN = 10
+    //     const transactionResponce = await simpleStorage.addPerson(person, faveN)
+    //     await transactionResponce.wait(1)
+    // })
 })

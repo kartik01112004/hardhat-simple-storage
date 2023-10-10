@@ -34,7 +34,7 @@ module.exports = {
     gasReporter: {
         //to see how much gas any function uses
         //so we can optimize it to be less costly and more effective
-        enabled: false,
+        enabled: true,
         currency: "USD",
         outputFile: "gas-report.txt",
         noColors: true,
